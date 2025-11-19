@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Suvajit Portfolio</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+</head>
+
+<body>
+    <!-- NEW: Scroll progress bar + glow -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="section-glow" id="sectionGlow"></div>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="#hero">Suvajit<span class="accent">.</span></a>
+
+            <nav class="nav" id="nav">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO (pinned + parallax) -->
+        <section id="hero" class="section hero" data-bg="dark">
+            <div class="container hero-inner">
+                <div class="hero-left">
+                    <p class="hero-kicker">Full-Stack Web Developer (MERN)</p>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="hero-name">Suvajit Rana</span>
+                    </h1>
+                    <p class="hero-sub">
+                        MCA graduate (Techno India University, 2025, CGPA 8.75).
+                        I build responsive, animated, and user-focused web applications using the MERN stack and
+                        JavaScript.
+                    </p>
+
+                    <div class="hero-cta">
+                        <a class="btn primary" href="#contact">Hire Me</a>
+                        <a class="btn ghost" href="https://www.linkedin.com/in/suvajit-rana-b5903024a/" target="_blank"
+                            rel="noreferrer">
+                            LinkedIn
+                        </a>
+                        <a class="btn ghost" href="mailto:rana.suvajit7@gmail.com">Email</a>
+                        <a class="btn secondary" href="assets/resume.pdf" download>
+                            Download Resume
+                        </a>
+                    </div>
+
+                    <ul class="hero-meta">
+                        <li><strong>CGPA:</strong> 8.75</li>
+                        <li><strong>Location:</strong> Kolkata, India</li>
+                        <li><strong>Role:</strong> Fresher — Web / MERN</li>
+                    </ul>
+                </div>
+
+                <div class="hero-right">
+                    <div class="profile-orbit">
+                        <div class="avatar">
+                            <img src="assets/suva.jpg" alt="Suvajit Rana" class="avatar-img">
+                        </div>
+                        <div class="orbit-card oc-1">JavaScript</div>
+                        <div class="orbit-card oc-2">React.js</div>
+                        <div class="orbit-card oc-3">MongoDB</div>
+                        <div class="orbit-card oc-4">Node.js</div>
+                    </div>
+                    <div class="hero-highlight">
+                        <p>MCA — Techno India University (2025)</p>
+                        <p>Full-Stack Intern @ Euphoria GenX (Feb 2025 – Aug 2025)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section about" data-bg="dark">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            I recently completed my Master of Computer Applications (MCA) from Techno India
+                            University, Kolkata (2025 batch) with a CGPA of 8.75.
+                        </p>
+                        <p>
+                            Before that, I completed my Bachelor of Computer Applications (BCA) from
+                            Midnapore College (Autonomous) with a CGPA of 8.89, and my Higher Secondary (HS)
+                            from Natuk Vivekananda Bidyamandir under WBCHSE with a score of 78.4%.
+                        </p>
+                        <p>
+                            I enjoy turning ideas into responsive web applications. During my Full-Stack Web
+                            Development Internship at Euphoria GenX (Feb 2025 – Aug 2025), I worked with
+                            the MERN stack, APIs, and deployment workflows.
+                        </p>
+                        <p>
+                            I am actively seeking a fresher opportunity in the IT industry where I can
+                            contribute, learn from experienced engineers, and grow into a strong full-stack developer.
+                        </p>
+                    </div>
+
+                    <div class="about-cards">
+                        <div class="card about-card">
+                            <h3>Education</h3>
+                            <p><strong>MCA</strong> — Techno India University, Kolkata (2025)</p>
+                            <p>CGPA: <strong>8.75</strong></p>
+                            <hr style="border:0;border-top:1px solid rgba(148,163,184,0.3);margin:0.6rem 0;">
+                            <p><strong>BCA</strong> — Midnapore College (Autonomous), Midnapore (2023)</p>
+                            <p>CGPA: <strong>8.89</strong></p>
+                            <hr style="border:0;border-top:1px solid rgba(148,163,184,0.3);margin:0.6rem 0;">
+                            <p><strong>HS</strong> — Natuk Vivekananda Bidyamandir (WBCHSE), (2020)</p>
+                            <p>Percentage: <strong>78.4%</strong></p>
+                        </div>
+
+                        <div class="card about-card">
+                            <h3>Certification</h3>
+                            <p>
+                                Completed <strong>Generative AI</strong> Certification Course.
+                            </p>
+                            <a href="https://drive.google.com/file/d/1BmyKARDodTz9MMGb34EYSg25Sd4y7koG/view?usp=drive_link"
+                                class="btn ghost" target="_blank" rel="noreferrer"
+                                style="margin-top: 0.6rem; font-size: 0.85rem; padding-inline: 0.9rem;">
+                                See Here
+                            </a>
+                        </div>
+
+                        <div class="card about-card">
+                            <h3>Platforms & Tools</h3>
+                            <p>Git · Postman · VS Code · Windows</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section skills" data-bg="accent">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-badges">
+                    <div class="skill-group">
+                        <h3>Languages</h3>
+                        <div class="badges">
+                            <span>JavaScript</span>
+                            <span>Node.js</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Java (basic)</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Frameworks / Libraries</h3>
+                        <div class="badges">
+                            <span>React.js</span>
+                            <span>Express.js</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Databases</h3>
+                        <div class="badges">
+                            <span>MongoDB</span>
+                            <span>MySQL</span>
+                            <span>SQL*Plus</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Tools</h3>
+                        <div class="badges">
+                            <span>Git</span>
+                            <span>Postman</span>
+                            <span>VS Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section projects" data-bg="dark">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-track">
+                    <article class="project-card">
+                        <h3>Hungry — Food Delivery (MERN)</h3>
+                        <p>
+                            A fully responsive food delivery web application built with MongoDB, Express.js,
+                            React.js, and Node.js, featuring a modern UI and smooth end-to-end flow from
+                            ordering to delivery tracking.
+                        </p>
+                        <div class="tags">
+                            <span>MERN</span><span>Responsive</span><span>UI/UX</span>
+                        </div>
+                        <a href="https://github.com/Suvajit73/Hungry" class="btn btn-glow" target="_blank"
+                            rel="noreferrer">
+                            View Project
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>House & Parking Rental (Group)</h3>
+                        <p>
+                            A unique platform to book rental rooms and parking spaces (Express.js, React.js,
+                            Node.js, MySQL), built to solve the missing connection between room bookings and parking.
+                        </p>
+                        <div class="tags">
+                            <span>Express</span><span>MySQL</span><span>Team Project</span>
+                        </div>
+                        <a href="https://github.com/Suvajit73/Home-Grid" class="btn btn-glow-secondary" target="_blank"
+                            rel="noreferrer">
+                            View Project
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Mini Experiments</h3>
+                        <p>
+                            Smaller components and demo apps built during learning and internship:
+                            dashboards, forms, and animated interfaces using React and JavaScript.
+                        </p>
+                        <div class="tags">
+                            <span>React</span><span>JavaScript</span>
+                        </div>
+                        <a href="https://github.com/Suvajit73?tab=repositories" class="btn btn-glow-tertiary"
+                            target="_blank" rel="noreferrer">
+                            View Experiments
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience" class="section experience" data-bg="accent">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="exp-timeline">
+                    <div class="exp-item">
+                        <div class="exp-time">Feb 2025 – Aug 2025</div>
+                        <div class="exp-content">
+                            <h3>Full-Stack Web Development Intern — Euphoria GenX</h3>
+                            <p>
+                                Worked on MERN-based web applications: implementing features,
+                                integrating APIs, fixing bugs, and supporting deployment.
+                                Learned practical workflow, code reviews, and collaboration.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section contact" data-bg="dark">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-grid">
+                    <div class="contact-info card">
+                        <h3>Let's Connect</h3>
+                        <p>
+                            If you have an opportunity suitable for a fresher or want to collaborate on a project,
+                            feel free to reach out.
+                        </p>
+                        <ul class="contact-list">
+                            <li><strong>Email:</strong> <a
+                                    href="mailto:rana.suvajit7@gmail.com">rana.suvajit7@gmail.com</a></li>
+                            <li><strong>Phone:</strong> <a href="tel:+917001982895">+91 7001982895</a></li>
+                            <li>
+                                <strong>LinkedIn:</strong>
+                                <a href="https://www.linkedin.com/in/suvajit-rana-b5903024a/" target="_blank"
+                                    rel="noreferrer">
+                                    Suvajit Rana
+                                </a>
+                            </li>
+                            <li>
+                                <strong>GitHub:</strong>
+                                <a href="https://github.com/Suvajit73" target="_blank" rel="noreferrer">
+                                    github.com/Suvajit73
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- REAL MAILTO FORM -->
+                    <form id="contactForm" class="contact-form card">
+                        <input type="text" name="name" placeholder="Your name" required />
+                        <input type="email" name="email" placeholder="Your email" required />
+                        <textarea name="message" rows="5" placeholder="Message" required></textarea>
+                        <button class="btn primary" type="submit">Send Message</button>
+                        <p class="contact-note">
+                            This form will open your email app and send a mail to:
+                            <strong>rana.suvajit7@gmail.com</strong>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Suvajit Rana — Web Developer</p>
+        </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+</body>
+
+</html>
